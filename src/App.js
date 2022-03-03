@@ -22,7 +22,7 @@ function App() {
        </div>
        <div className='col-7'>
         <Routes>
-          <Route path="/:id" element={ <CountryDetails list={Data} /> } />
+          <Route path="/:id" element={ <CountryDetails /> } />
         </Routes> 
        </div>
 
