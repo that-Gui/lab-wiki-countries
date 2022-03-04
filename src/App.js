@@ -8,7 +8,7 @@ import CountriesList from './components/CountriesList';
 import CountryDetails from './components/CountryDetails';
 
 //import section for data
-import Data from './countries.json';
+/* import Data from './countries.json'; */
 
 function App() {
   return (
