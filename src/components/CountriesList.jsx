@@ -21,7 +21,7 @@ function CountriesList() {
   return (
     <div>
       {first && first.map((el) =>
-       <div>
+       <div >
            <Link to={el.alpha3Code}>
            
            <img src={`https://flagpedia.net/data/flags/icon/72x54/${el.alpha2Code.toLowerCase()}.png`} alt="flag" />

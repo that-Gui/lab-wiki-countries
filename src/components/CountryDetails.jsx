@@ -27,7 +27,9 @@ function CountryDetails() {
         <>
         <img src={`https://flagpedia.net/data/flags/icon/72x54/${rightone.alpha2Code.toLowerCase()}.png`} alt="flag" />
         <h1>{rightone.name.official}</h1>
+        <hr />
         <h3> Catipal City: {rightone.capital}</h3>
+        <hr />
         <p>Territory size: {rightone.area}</p>
         </>          
         )}
