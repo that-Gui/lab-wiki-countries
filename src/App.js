@@ -18,7 +18,7 @@ function App() {
       <div className="row">
 
         <div className='col-5'>
-          <CountriesList list={Data} />
+          <CountriesList />
        </div>
        <div className='col-7'>
         <Routes>

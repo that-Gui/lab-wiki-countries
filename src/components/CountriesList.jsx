@@ -1,12 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
-function CountriesList(props) {
+function CountriesList() {
+
+  const [first, setfirst] = useState(null)
+
+  useEffect(() => {
+    axios.get(`https://ih-countries-api.herokuapp.com/countries/`)
+      .then((response) => {
+        console.log(response.data);
+        setfirst(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <div>
-       {props.list.map((el) =>
+      {first && first.map((el) =>
        <div>
            <Link to={el.alpha3Code}>
            
